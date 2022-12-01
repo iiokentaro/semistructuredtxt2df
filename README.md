@@ -14,7 +14,7 @@ This is one solution to an issue discussed in https://stackoverflow.com/question
 Install my-project with npm
 
 ```bash
-  pip install semistructuredtxt2df
+pip install semistructuredtxt2df
 ```
     
 ## Usage/Examples
@@ -25,9 +25,9 @@ For example, this package can read this sample file as a pandas DataFrame by ski
 * column_names: str, list, tuple, or set
   * The first row in the text file that contains all of the elements in it is recognized as the dataframe column names, so you do not have to specify all the columns unless you want to. The order of the column names does not matter.
 * max_rows_to_try: int = None
-* separator=","
-* encode="utf-8"
-* is_commented=False
+* separator: str = ","
+* encode: str = "utf-8"
+* is_commented: bool = False
 
 ### Sample file (sample_data/sample_text_file.csv)
 
@@ -53,9 +53,9 @@ For example, this package can read this sample file as a pandas DataFrame by ski
 from semistructuredtxt2df import read_txt
 
 # Try reading sample files with different column_names
-df1 = read_txt(r"sample_data/sample_text_file.csv", "Country")
-df2 = read_txt(r"sample_data/sample_text_file.csv", ["Country"])
-df3 = read_txt(r"sample_data/sample_text_file.csv", ["Country", "Pts"])
+df1 = read_txt(r"sample_text_file.csv", "Country")
+df2 = read_txt(r"sample_text_file.csv", ["Country"])
+df3 = read_txt(r"sample_text_file.csv", ["Country", "Pts"])
 
 # Check if df1, df2, and df3 are the same
 print(df1.equals(df2))

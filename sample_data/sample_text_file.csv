@@ -1,0 +1,14 @@
+"Game Is FIFA World Cup"
+"Year Is 2022"
+"Group Is E"
+"Timestamp: 1669866143"
+
+"This is a random comment."
+"This is also a random comment."
+"Country, is also included in this row, but this row will be skipped."
+
+"Country","MP","W","D","L","GF","GA","GD","Pts"
+"Spain",1,1,1,0,8,1,7,4
+"Japan",2,1,0,1,2,2,0,3
+"Costa Rica",2,1,0,1,1,7,-6,3
+"Germany",2,0,1,1,2,3,-1,1
