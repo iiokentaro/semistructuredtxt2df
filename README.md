@@ -1,7 +1,7 @@
 # semistructuredtxt2df
 
 This Python package reads a text file with unknown rows of headers (e.g., when skiprows can vary) and returns a pandas DataFrame object.
-This is one solution to an issue discussed in https://stackoverflow.com/questions/9578580/skip-first-couple-of-lines-while-reading-lines-in-python-file.
+With this package, you can "skip first couple of lines while reading lines in Python" (https://stackoverflow.com/questions/9578580/skip-first-couple-of-lines-while-reading-lines-in-python-file).
 
 
 ## License
